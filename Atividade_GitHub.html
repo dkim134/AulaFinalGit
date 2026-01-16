@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Equipe - Projeto GitHub</title>
+  <style>
+    :root {
+      --cor-primaria: #165e40;
+      --cor-secundaria: #50db34;
+      --cor-fundo: #ecf0f1;
+      --cor-branco: #fff;
+      --cor-claro: #f7f9fa;
+      --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-primaria);
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    header, section, footer {
+      background-color: var(--cor-branco);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: var(--sombra-suave);
+    }
+
+    h1, h2, h3 {
+      color: var(--cor-primaria);
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+
+    header {
+      border-left: 8px solid var(--cor-secundaria);
+    }
+
+    .painel-git {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .comando {
+      flex: 1 1 220px;
+      background-color: var(--cor-claro);
+      padding: 15px;
+      border-left: 5px solid var(--cor-secundaria);
+      border-radius: 8px;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    .comando code {
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .integrante {
+      background-color: #fefefe;
+      border: 1px solid #dddddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: var(--sombra-suave);
+    }
+
+    .integrante1 {
+      background-color: #f8ecde;
+    }
+
+    .integrante2 {
+      background-color: #dbebd1;
+    }
+
+    .integrante3 {
+      background-color: #eee6f8;
+    }
+
+    .integrante4 {
+      background-color: #fcd4d4;
+    }
+
+    .bloco {
+      padding: 15px;
+      border-left: 4px solid var(--cor-secundaria);
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ccc;
+    }
+
+    @media screen and (max-width: 768px) {
+      .painel-git {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Equipe: DartLab Sessions</h1>
+    <p><strong>Unidade Curricular:</strong> Git e GitHub</p>
+    <p><strong>Professor:</strong> Irlândio Oliveira</p>
+  </header>
+
+  <section>
+    <h2>Comandos mais utilizados no Git</h2>
+    <div class="painel-git">
+      <div class="comando"><code>git init</code>Inicializa um repositório Git</div>
+      <div class="comando"><code>git clone [url]</code>Clona um repositório remoto</div>
+      <div class="comando"><code>git status</code>Mostra o estado atual dos arquivos</div>
+      <div class="comando"><code>git add .</code>Adiciona todos os arquivos para o commit</div>
+      <div class="comando"><code>git commit -m "mensagem"</code>Registra alterações</div>
+      <div class="comando"><code>git push</code>Envia as alterações para o repositório remoto</div>
+      <div class="comando"><code>git pull</code>Atualiza o repositório local</div>
+      <div class="comando"><code>git log</code>Exibe o histórico de commits</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Apresentação dos Integrantes</h2>
+
+    <div class="integrante integrante1">
+      <h3>Nome: David Luis Kim</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: Blumenau<br>
+        Idade: 24 anos<br>
+        Formação: Graduação Incompleto
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        Para encontrar um local para evoluir minha soft e hard skills, procurar um mercado de trabalho e me introduzir nele, aproveitar as oportunidades de aprendizado e evoluir cada dia mais !<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        Sim – tenho interesse no desenvolvimento de qualquer recurso digital, mas agora estou focado em aprender o flutter, com foco na linguagem dart para desenvolvimento de aplicativos.<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        além das horas em sala de aula dás 13:30 até 17:30, busco conhecimentos fora, então cerca de 2h todos os dias dedicados a aprender mais e desenvolver melhor, podendo ser até mais horas dependendo a atividade proporcionada<br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        Sim – Quando mais conhecemos do mundo de desenvolvedor, mais entendemos que podemos evoluir e trazer conteúdos diversos, além do curso de flutter já tenho web designer (evolua), designer digital (evolua) , Ux|Ui e product designer feitos pelo entra 21
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+          Desenvolver pelo Git e GitHub me capacitou a desenvolver via nuvem, proporcionando trabalhar de maneira remota, sabendo fundamentos como, git pull e push, sabendo como puxar um documento e fazer o upload, além de saber commitar, clonar, e corrigir gits, atualizações além de outras skills, de maneira especializada.
+      </div>
+    </div>
+
+    <!-- Repetir estrutura para os demais integrantes -->
+
+    <div class="integrante integrante2">
+      <h3>Nome: [Nome do Integrante 2]</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: [Inserir cidade]<br>
+        Idade: [Inserir idade]<br>
+        Formação: [Inserir formação ou nível escolar]
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        [Texto do aluno]<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        [Sim/Não – justificar]<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        [Inserir tempo médio por semana]<br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        [Sim/Não – comentar]
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        [Texto explicando o que aprendeu até agora e como tem contribuído com o projeto]
+      </div>
+    </div>
+
+    <div class="integrante integrante3">
+      <h3>Nome: [Nome do Integrante 3]</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: [Inserir cidade]<br>
+        Idade: [Inserir idade]<br>
+        Formação: [Inserir formação ou nível escolar]
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        [Texto do aluno]<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        [Sim/Não – justificar]<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        [Inserir tempo médio por semana]<br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        [Sim/Não – comentar]
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        [Texto explicando o que aprendeu até agora e como tem contribuído com o projeto]
+      </div>
+    </div>
+
+    <div class="integrante integrante4">
+      <h3>Nome: André Felipe Isensee Leite</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: Blumenau<br>
+        Idade: 30<br>
+        Formação: Graduando Análise e Desenvolvimento de Sistemas, Curso C#, Cursando Inglês.
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+
+        Por que escolheu realizar este curso?<br>
+        Sempre acreditei que a tecnologia é uma ponte entre ideias e soluções que transformam o mundo. Escolhi participar do curso porque reconheço nele uma oportunidade única de acelerar meu desenvolvimento técnico e profissional na área de desenvolvimento de software.<br>
+
+        Como estudante de Análise e Desenvolvimento de Sistemas, busco constantemente desafios que me tirem da zona de conforto e me conectem com o mercado real. O curso representa exatamente isso: um ambiente dinâmico, colaborativo e com foco em projetos práticos que me permitem aplicar os conhecimentos adquiridos e aprender com profissionais experientes.<br><br>
+
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        Sim – justificar - Tenho interesse em trabalhar na área de Análise e Desenvolvimento de Sistemas porque enxergo na tecnologia uma ferramenta poderosa de transformação social, econômica e humana. Sempre tive curiosidade em entender como os sistemas funcionam, como os dados são processados e como o software pode resolver problemas reais com eficiência e inovação.<br>
+
+        O que me atrai nessa área é a possibilidade de criar soluções, automatizar processos, melhorar a vida das pessoas e participar ativamente da construção do futuro digital.<br><br>
+
+        Quantas horas dedica aos estudos deste curso?<br>
+        Eu estudo em torno de <strong>4h por dia depois do curso.</strong><br><br>
+
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        Sim – comentar - Tenho planos de continuar minha formação com cursos avançados em tecnologias específicas, como Inteligência Artificial, Machine Learning e Desenvolvimento Web Full Stack. Acredito que a educação contínua é essencial para me manter atualizado e competitivo no mercado de trabalho, além de me permitir explorar novas áreas e inovações tecnológicas.
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        Desde o início do curso, tenho aprendido a importância do versionamento de código e como o GitHub facilita a colaboração em equipe. Aprendi a utilizar comandos essenciais como <strong>`git init`, `git clone`, `git add`, `git commit` e `git push`,</strong> que são fundamentais para gerenciar projetos de software de forma eficiente. Além disso, estou desenvolvendo habilidades práticas em resolução de conflitos, revisão de código e integração contínua, o que tem sido crucial para o sucesso do nosso projeto em equipe.
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Projeto GitHub - UC Git | Professor Irlândio Oliveira</p>
+  </footer>
+
+</body>
+</html>
